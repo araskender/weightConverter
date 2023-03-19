@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Created by Md Ashiqur Rahman-->
+    <!-- Creater email: araskender@gmail.com, Phone: 880 1916 990 600-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="container">
+        <h1> Converting Area</h1>
+
+
+        <div class="part1">
+            
+            <div class="cont">
+                <label for="">Input in Milimiter</label>
+            <input type="number" oninput="dhaka(this.value)" onchange="dhaka(this.value)">
+
+            <p>Total Miter is <span id="outputM"></span></p>
+            </div>
+        </div>
+
+
+
+        <div class="part2">
+            
+            <div class="cont1">
+                <label for="">Input in taka</label>
+            <input type="number" oninput="khulna(this.value)" onchange="khulna(this.value)">
+
+            <p>Total Dollar is <span id="outputT"></span></p>
+            </div>
+        </div>
+    
+
+        <div class="part3">
+            
+            <div class="cont2">
+                <label for="">Input in Piece</label>
+            <input type="number" oninput="dim(this.value)" onchange="dim(this.value)">
+
+            <p>Total Dozon is <span id="outputD"></span></p>
+            </div>
+        </div>
+
+
+
+        <!-- Array Object Scop -->
+
+
+        <var id="objective">
+
+            <var class="arays">
+                <h2>= Array =</h2>
+                <p id="cars"></p>
+                <script>
+                    var car = ["Mango", "Banana", "Apple", "Orange"]
+                    document.getElementById('cars').innerHTML = car[1]
+                </script>
+            </var>
+        <!-- 2-->
+            <var class="objes">
+                <h2>= Object =</h2>
+                <p id="obj"></p>
+                <script>
+                    var car = {name : "Toyota", model : "AOC001", color : "Gray"}
+                    document.getElementById('obj').innerHTML = car.model;
+                </script> 
+            </var>
+
+
+            <!-- 3-->
+            <var class="scop">
+                <h2>= Scop =</h2>
+                <p id="scp"></p>
+                <script>
+                    var a = 25;
+                    var b = 10;
+                    function testFun(){
+                        document.write(a+b, "<br>", a-b );
+                    }testFun();
+                    
+                </script> 
+            </var>
+
+
+        </var>
+    
+
+    <script src="script/project.js"></script>
+    </div>
+</body>
+</html>
